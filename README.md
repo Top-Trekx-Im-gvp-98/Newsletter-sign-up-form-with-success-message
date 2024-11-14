@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Top-Trekx-Im-gvp-98/Newsletter-sign-up-form-with-success-message)
+- Live Site URL: [Add live site URL here](https://newsletter-sign-up-form-im-gvp-98.netlify.app/)
 
 ## My process
 
