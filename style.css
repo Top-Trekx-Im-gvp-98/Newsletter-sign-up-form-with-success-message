@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(assets/fonts/Roboto-Bold.ttf);
+}
+
+:root {
+    --Color-Tomato: hsl(4, 100%, 67%);
+    --Color-Dark_Tomato: hsl(9, 100%, 67%);
+    --Color-Dark_Slate_Grey: hsl(234, 29%, 20%);
+    --Color-Charcoal_Grey: hsl(235, 18%, 26%);
+    --Color-Grey: hsl(231, 7%, 60%);
+    --Color-White: hsl(0, 0%, 100%);
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto-Regular", "Roboto-Bold", sans-serif;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--Color-Dark_Slate_Grey);
+}
+
+.card {
+    width: 700px;
+    height: 450px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: var(--Color-White);
+    border-radius: 25px;
+    flex-direction: row;
+}
+
+.content,
+.card-image {
+    width: 100%;
+    max-width: 50%;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.heading {
+    color: var(--Color-Dark_Slate_Grey);
+    font-size: 2rem;
+    margin-bottom: 25px;
+    font-weight: bolder;
+}
+
+.span-text {
+    color: var(--Color-Charcoal_Grey);
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.sub-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    color: var(--Color-Charcoal_Grey);
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+
+}
+
+.text img {
+    margin-right: 5px;
+}
+
+.email-form {
+    width: 100%;
+}
+
+.label-title {
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+
+.input-form {
+    width: 100%;
+    margin-top: 15px;
+}
+
+input[type="email"] {
+    width: 100%;
+    height: 4.5vh;
+    border: 1px solid var(--Color-Grey);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+input[type="button"] {
+    width: 100%;
+    height: 4.5vh;
+    cursor: pointer;
+    background-color: var(--Color-Dark_Slate_Grey);
+    color: var(--Color-White);
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="button"]:hover {
+    background: linear-gradient(110deg, var(--Color-Tomato), var(--Color-Dark_Tomato));
+}
+
+.card-image picture img {
+    width: 100%;
+    height: 410px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.successfull {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    max-width: 90%;
+    padding: 20px;
+    background-color: var(--Color-White);
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    z-index: 100;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.registerBtn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: hsl(228, 45%, 44%);
+    color: var(--Color-White);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registerBtn:hover {
+    background-color: hsl(228, 45%, 50%);
+}
